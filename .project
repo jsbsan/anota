@@ -1,0 +1,21 @@
+# Gambas Project File 3.0
+Title=anota
+Startup=FMain
+Icon=notas.jpeg
+Version=0.0.1
+Component=gb.image
+Component=gb.gui.qt
+Component=gb.form
+Component=gb.settings
+Description="anotaciones"
+Authors="jsbsan"
+TabSize=4
+Language=en_US
+Maintainer=jsbsan
+Address=jusabejusabe@gmail.com
+License=General Public License
+PackageName=anota-0.0.1
+Packager=1
+Systems=debian
+Menus=debian:"Applications/Editors"
+Groups=debian:"admin"

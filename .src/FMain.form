@@ -1,0 +1,40 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,112,76)
+  Icon = Picture["notas.jpeg"]
+  Arrangement = Arrange.Fill
+  { HPanel1 VBox
+    MoveScaled(3,2,67,66)
+    Expand = True
+    { HBox1 HBox
+      MoveScaled(0,0,58,5)
+      { ButtonRecarga Button
+        MoveScaled(3,0,6,5)
+        Picture = Picture["icon:/22/refresh"]
+      }
+      { Spring1 Spring
+        MoveScaled(10,1,19,4)
+      }
+      { TextLabel1 TextLabel
+        MoveScaled(31,0,6,5)
+        Font = Font["Bold,Italic,+3"]
+        Expand = True
+        Text = ("Anotaciones")
+        Alignment = Align.Center
+      }
+      { Spring2 Spring
+        MoveScaled(39,1,7,2)
+      }
+      { ButtonGuardar Button
+        MoveScaled(49,0,7,5)
+        Picture = Picture["icon:/22/save"]
+      }
+    }
+    { TextAreaNotas TextArea
+      MoveScaled(14,21,27,34)
+      Background = &HFFFF00&
+      Expand = True
+    }
+  }
+}

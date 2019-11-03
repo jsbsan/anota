@@ -1,0 +1,22 @@
+' Gambas class file
+
+Public Sub Form_Open()
+
+    settings.Read(Me)
+
+    TextAreaNotas.text = File.load(User.Home & "/informacionNotas.txt")
+    TextAreaNotas.pos = 1
+
+End
+
+Public Sub ButtonGuardar_Click()
+
+    File.save(User.Home & "/informacionNotas.txt", TextAreaNotas.text)
+
+End
+
+Public Sub Form_Close()
+
+    settings.Write(Me)
+
+End
