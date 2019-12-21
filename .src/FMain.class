@@ -4,6 +4,8 @@ Public Sub Form_Open()
 
     settings.Read(Me)
 
+    TextLabel1.text = ("Anotaciones")
+    TextLabel2.text = ("Versión:") & Application.Version
     TextAreaNotas.text = File.load(User.Home & "/informacionNotas.txt")
     TextAreaNotas.pos = 1
 

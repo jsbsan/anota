@@ -8,23 +8,25 @@
     MoveScaled(3,2,67,66)
     Expand = True
     { HBox1 HBox
-      MoveScaled(0,0,58,5)
+      MoveScaled(2,1,58,5)
       { ButtonRecarga Button
         MoveScaled(3,0,6,5)
         Picture = Picture["icon:/22/refresh"]
       }
       { Spring1 Spring
-        MoveScaled(10,1,19,4)
+        MoveScaled(10,1,4,4)
       }
       { TextLabel1 TextLabel
-        MoveScaled(31,0,6,5)
+        MoveScaled(15,0,28,5)
         Font = Font["Bold,Italic,+3"]
         Expand = True
+        AutoResize = True
         Text = ("Anotaciones")
-        Alignment = Align.Center
+        Alignment = Align.Bottom
+        Border = Border.Plain
       }
       { Spring2 Spring
-        MoveScaled(39,1,7,2)
+        MoveScaled(42,1,7,2)
       }
       { ButtonGuardar Button
         MoveScaled(49,0,7,5)
@@ -32,9 +34,17 @@
       }
     }
     { TextAreaNotas TextArea
-      MoveScaled(14,21,27,34)
+      MoveScaled(7,14,27,34)
       Background = &HFFFF00&
       Expand = True
+      Wrap = True
+    }
+    { TextLabel2 TextLabel
+      MoveScaled(16,56,28,5)
+      Font = Font["Bold,Italic,+3"]
+      Text = ("Anotaciones")
+      Alignment = Align.Bottom
+      Border = Border.Plain
     }
   }
 }
